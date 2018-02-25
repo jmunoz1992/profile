@@ -1,12 +1,3 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
- *
- * Project Name: Minimal - Free Bootstrap 3 Theme
- * Version: 1.0
- * URL: http://blacktie.co
- */
-
 body {
   background-color: #f2f2f2;
     font-family: 'EB Garamond', serif;
@@ -78,7 +69,7 @@ a:after {
    Wrap Sections
    ========================================================================== */
 
-#headerwrap {
+#headerwrap, #f {
 	background: url(../img/header-bg.jpg) no-repeat center top;
 	text-align:center;
 	background-attachment: relative;
@@ -108,25 +99,22 @@ a:after {
 	color: white;
 	font-size: 30px;
 	font-weight: 100;
-    font-family: 'EB Garamond', serif;
-    font-style: oblique;
+	font-family: 'EB Garamond', serif;
+	font-style: oblique;
 }
 
-#headerwrap .logo {
-	text-align: left;
-	margin-left: 20px;
-	margin-top: 15px;
+#headerwrap .logo, .container .logo {
+	position:absolute;
+	top:0;
+	left:0;
+	padding: 10px;
 }
 
+.logo img {
+	opacity: 0.75;
+}
 
 /* Footer Wrap */
-
-#f {
-	background: #1a1a1a;
-	padding-top: 55px;
-	padding-bottom: 55px;
-	text-align: center
-}
 
 #f h3 {
 	color: white;
@@ -308,11 +296,18 @@ a:after {
 			transition: all .1s ease-in-out;
 }
 
-a.contact-me {
+
+/* hovering links */
+a.homepage {
+	color: goldenrod;
+}
+
+a.homepage:hover {
 	color: white;
 }
 
-a.contact-me:hover {
-	color: goldenrod;
+/* border on portfolio image */
+img.portfolio {
+	border:5px solid white;
 }
 
