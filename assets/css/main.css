@@ -49,6 +49,7 @@ nav {
 #about {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: space-evenly;
 	height: 100vh;
 }
@@ -57,6 +58,11 @@ nav {
 	height: 0px;
 	margin-top: 75px;
 	width: 50%;
+}
+
+#about-content > p {
+	margin-top: 2px;
+	line-height: 26px;
 }
 
 #home, #f {
@@ -80,7 +86,7 @@ nav {
 
 .row > a {
 	color: #000000;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Comfortaa;
 }
 
 .row > a:hover {
@@ -125,6 +131,7 @@ nav {
 #skills {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 }
 
@@ -153,10 +160,14 @@ nav {
 
 #portfolio-content {
 	padding-top: 100px;
+	text-align: center;
 }
 
 #portfolio-content > h1 {
 	text-align: center;
+	background-color: #555;
+	padding: 10px;
+	color: #ffffff;
 }
 
 #portfolio-cards-section {
@@ -268,11 +279,78 @@ nav {
 
 #contact-content {
 	padding-top: 200px;
+	width: 50%;
+	margin: 50px auto;
+	display: block;
 }
 
 #contact-content > h1 {
 	text-align: center;
+	margin-left: 50px;
+}
+
+/* icons underneath contact */
+#contact-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 5px auto;
 	width: 50%;
-	margin: 0 auto;
+}
+
+.contact-icon {
+	margin-left: 50px;
+}
+
+.contact-icon > a > img {
+	height: 70px;
+	width: 70px;
+	text-align: center;
 	display: block;
+	margin: 0 auto;
+	color: #555;
+}
+
+.contact-icon > a > h3 {
+	text-align: center;
+	color: #555;
+	text-decoration: none;
+}
+
+.contact-icon > a > img:hover {
+	opacity: 0.7;
+}
+
+.contact-icon > a:hover {
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+
+/* button in portfolio cards css */
+
+button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 5px;
+  font-family: Arial;
+  font-size: 20px;
+  background: #3193d4;
+	padding: 10px 10px 10px 10px;
+	margin: 5px;
+  text-decoration: none;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button > a {
+	color: #ffffff;
+}
+
+button > a:hover {
+	text-decoration: none;
+	color: #ffffff;
+	opacity: 0.7;
 }
