@@ -39,6 +39,12 @@ nav {
 	padding: 10px;
 }
 
+.nav-item > a:hover {
+	text-decoration: none;
+	background-color: #ccffcc;
+	-webkit-transition:100;
+}
+
 /* about me page view */
 #about {
 	display: flex;
@@ -216,6 +222,8 @@ nav {
 	font-size: 15px;
 }
 
+/* Three icons in bottom of portfolio */
+
 #rest-of-work {
 	display: flex;
 	flex-direction: row;
@@ -245,4 +253,26 @@ nav {
 
 .other-work > a > img:hover {
 	opacity: 0.7;
+}
+
+.other-work > a:hover {
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+/* Contact Section */
+
+#contact {
+	height: 100vh;
+}
+
+#contact-content {
+	padding-top: 200px;
+}
+
+#contact-content > h1 {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	display: block;
 }

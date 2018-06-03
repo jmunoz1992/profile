@@ -8,26 +8,54 @@
 	<link rel="shortcut icon" href="assets/ico/favicon.png">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<title>JEM</title>
-<!-- Bootstrap core CSS -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<link href="assets/css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<!-- Custom styles for this template -->
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/modernizr.custom.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
 
 	<!-- Fonts -->
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
 	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				});
+			} // End if
+		});
+	});
+	</script>
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#theMenu">
 
 <header>
 		<div class="logo">
-				<a href="index.html#home"><img src="assets/img/PersonalWebsiteLogo.png"></a>
+			<a href="index.html#home"><img src="assets/img/PersonalWebsiteLogo.png"></a>
 		</div>
 		<nav>
 			<div class="nav-item">
@@ -133,70 +161,103 @@
 	</div>
 	<!-- /about -->
 		<!--portfolio -->
-		<div id="portfolio">
-			<div id="portfolio-content">
-				<h1>My Portfolio</h1>
-			</div>
-			<br /><br />
-			<div id="portfolio-cards-section">
-				<div class="portfolio-card">
-					<h2>Tasty Bytes</h2>
-					<img src="assets/img/tasty-bytes.png">
-					<div class="overlay">
-						<div class="text">
-							<h3>Tasty Bytes</h3>
-							<p>An e-commerce platform offering a variety of gourmet candy products.</p>
-							<button><a href="https://tasty-bytes.herokuapp.com/">Demo</a></button>
-							<button><a href="https://github.com/jmunoz1992/tasty-bytes">Code</a></button>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-card">
-					<h2>PokeAR</h2>
-					<img src="assets/img/poke-ar.png">
-					<div class="overlay">
-						<div class="text">
-							<h3>PokeAR</h3>
-							<p>An augmented reality (AR) pokemon game that renders AR images of two pokemon.</p>
-							<button><a href="https://www.youtube.com/watch?v=IY6ngwa6g00">Video</a></button>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio-card">
-					<h2>Pancake</h2>
-					<img src="assets/img/pancake.png">
-					<div class="overlay">
-						<div class="text">
-							<h3>Pancake</h3>
-							<p>A visual project management and planning tool for software development teams.</p>
-							<button><a href="http://www.pancake-app.com/">Demo</a></button>
-							<button><a href="https://github.com/jmunoz1992/pancake">Code</a></button>
-						</div>
+	<div id="portfolio">
+		<div id="portfolio-content">
+			<h1>My Portfolio</h1>
+		</div>
+		<br /><br />
+		<div id="portfolio-cards-section">
+			<div class="portfolio-card">
+				<h2>Tasty Bytes</h2>
+				<img src="assets/img/tasty-bytes.png">
+				<div class="overlay">
+					<div class="text">
+						<h3>Tasty Bytes</h3>
+						<p>An e-commerce platform offering a variety of gourmet candy products.</p>
+						<button><a href="https://tasty-bytes.herokuapp.com/">Demo</a></button>
+						<button><a href="https://github.com/jmunoz1992/tasty-bytes">Code</a></button>
 					</div>
 				</div>
 			</div>
-			<div id="rest-of-work">
+			<div class="portfolio-card">
+				<h2>PokeAR</h2>
+				<img src="assets/img/poke-ar.png">
+				<div class="overlay">
+					<div class="text">
+						<h3>PokeAR</h3>
+						<p>An augmented reality (AR) pokemon game that renders AR images of two pokemon.</p>
+						<button><a href="https://www.youtube.com/watch?v=IY6ngwa6g00">Video</a></button>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-card">
+				<h2>Pancake</h2>
+				<img src="assets/img/pancake.png">
+				<div class="overlay">
+					<div class="text">
+						<h3>Pancake</h3>
+						<p>A visual project management and planning tool for software development teams.</p>
+						<button><a href="http://www.pancake-app.com/">Demo</a></button>
+						<button><a href="https://github.com/jmunoz1992/pancake">Code</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="rest-of-work">
+			<div class="other-work">
+				<a href="https://github.com/jmunoz1992">
+					<h3>My Github</h3>
+					<img src="assets/img/github-icon.svg">
+				</a>
+			</div>
+			<div class="other-work">
+					<a href="https://docs.google.com/document/d/13OBzraJ9qR4AboiOxALM-Z7zX9KJMnFvPKfw365fN0M/edit?usp=sharing">
+						<h3>My Resume</h3>
+						<img src="assets/img/resume-icon.png">
+					</a>
+			</div>
+			<div class="other-work">
+					<a href="https://medium.com/@jasmine.esplago.munoz">
+						<h3>My Blog</h3>
+						<img src="assets/img/medium-icon.svg">
+					</a>
+			</div>
+		</div>
+	</div>
+	<!--/portfolio -->
+	<!--home -->
+	<div id="contact">
+		<div id="contact-content">
+			<h1>Let's Build Something Together</h1>
+		</div>
+		<div id="rest-of-work">
 				<div class="other-work">
 					<a href="https://github.com/jmunoz1992">
-						<h3>My Github</h3>
-						<img src="assets/img/github-icon.svg">
+						<h3>Email</h3>
+						<img src="assets/img/email-icon.svg">
 					</a>
 				</div>
 				<div class="other-work">
 						<a href="https://docs.google.com/document/d/13OBzraJ9qR4AboiOxALM-Z7zX9KJMnFvPKfw365fN0M/edit?usp=sharing">
-							<h3>My Resume</h3>
-							<img src="assets/img/resume-icon.png">
+							<h3>LinkedIn</h3>
+							<img src="assets/img/linkedin-icon.svg">
 						</a>
 				</div>
 				<div class="other-work">
 						<a href="https://medium.com/@jasmine.esplago.munoz">
-							<h3>My Blog</h3>
-							<img src="assets/img/medium-icon.svg">
+							<h3>Stack Overflow</h3>
+							<img src="assets/img/stackoverflow-icon.png">
+						</a>
+				</div>
+				<div class="other-work">
+						<a href="https://medium.com/@jasmine.esplago.munoz">
+							<h3>Angellist</h3>
+							<img src="assets/img/angellist-icon.png">
 						</a>
 				</div>
 			</div>
-		</div>
-			<!--/portfolio -->
+	</div>
+		<!--/home -->
 
 
 	<!-- Bootstrap core JavaScript
