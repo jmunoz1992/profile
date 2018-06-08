@@ -148,6 +148,7 @@ nav {
 #proficient-skills > h2, #lesser-skills > h2 {
 	text-align: center;
 }
+
 #skills {
 	display: flex;
 	flex-direction: row;
@@ -162,7 +163,7 @@ nav {
 }
 
 #proficient-skills {
-	margin: 150px 0px 50px 0px;
+	margin: 50px 0px 50px 0px;
 	height: 100px;
 }
 
@@ -330,6 +331,16 @@ nav {
 	opacity: 0.7;
 }
 
+@media screen and (max-width: 600px) {
+	#rest-of-work {
+		display: block;
+	}
+	.other-work {
+		margin: 0 0;
+		padding: 20px 0;
+	}
+}
+
 /* Contact Section */
 
 #contact {
@@ -383,6 +394,26 @@ nav {
 .contact-icon > a:hover {
 	text-decoration: none;
 	opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+	#contact {
+		margin-top: 700px;
+	}
+	#contact-content {
+		padding: 0px;
+		width: 100%;
+	}
+	#contact-content > h1 {
+		margin: 10px 0;
+	}
+	#contact-section {
+		display: block;
+	}
+	.contact-icon {
+		margin: 0 0;
+		padding: 20px 0px;
+	}
 }
 
 
